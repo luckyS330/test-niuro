@@ -1,0 +1,26 @@
+{
+  "name": "take-home-fe-test",
+  "version": "1.0.0",
+  "description": "Multi-application system with .NET backend and Next.js/Angular frontends",
+  "scripts": {
+    "install:all": "npm run install:backend && npm run install:nextjs && npm run install:angular1 && npm run install:angular2",
+    "install:backend": "cd backend-dotnet && dotnet restore",
+    "install:nextjs": "cd frontend-nextjs && npm install",
+    "install:angular1": "cd frontend-angular1 && npm install",
+    "install:angular2": "cd frontend-angular2 && npm install",
+    "start:backend": "cd backend-dotnet && dotnet run",
+    "start:nextjs": "cd frontend-nextjs && npm run dev",
+    "start:angular1": "cd frontend-angular1 && npm start",
+    "start:angular2": "cd frontend-angular2 && npm start"
+  },
+  "keywords": [
+    "dotnet",
+    "nextjs",
+    "angular",
+    "authentication",
+    "session"
+  ],
+  "author": "",
+  "license": "ISC"
+}
+
